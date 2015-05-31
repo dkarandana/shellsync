@@ -5,7 +5,7 @@ alias webroot=/var/www/
 
 function backupsite(){
         if [ -d ${webroot}$1 ]; then
-                cd /var/www/vhosts/
+                cd /var/www/webroot/
                 DATE=`date +%Y_%m_%d_%H%M%S`
                 orig=$1
                 FOLDER=${orig//\//.}
